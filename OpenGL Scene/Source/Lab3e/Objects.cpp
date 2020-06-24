@@ -30,6 +30,8 @@ void Objects::InitObjects()
 		SOIL_CREATE_NEW_ID,
 		SOIL_FLAG_MIPMAPS | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
 	);
+
+	
 }
 
 ////////////////////EXTERNALLY LOADED IN MODEL (CHAIR)/////////////////////////
@@ -70,6 +72,7 @@ void Objects::sphere(int segments, int radius )
 	
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glBindTexture(GL_TEXTURE_2D, goo);
 	  double x, y, z, angleLat=180/segments, angleLong=360/segments, degToRad=3.141592665885/180 ;
 
     for(double latitude =0; latitude <=180; latitude+=angleLat)			//increase by section (latitude)

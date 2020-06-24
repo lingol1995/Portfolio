@@ -20,6 +20,7 @@ public:
 	bool isKeyDown(int);
 	void setMouseX(int);
 	void setMouseY(int);
+	
 	int getMouseX();
 	int getMouseY();
 	// set mouse botton down (left, right, middle)

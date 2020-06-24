@@ -25,7 +25,10 @@ void Input::setMouseX(int pos)
 void Input::setMouseY(int pos)
 {
 	mouse.y = pos;
+	
 }
+
+
 
 int Input::getMouseX()
 {

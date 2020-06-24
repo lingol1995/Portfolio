@@ -49,7 +49,7 @@ BOOL InitialiseMyWindow(HINSTANCE hInstance, int nCmdShow)
 {
   
    hwnd = CreateWindow ("FirstWindowClass",					
-						 "My first Triangle",		  	
+						 "Link to the past",		  	
 						 WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME,	
 						 CW_USEDEFAULT,			
 						 CW_USEDEFAULT,			

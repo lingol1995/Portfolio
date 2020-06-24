@@ -115,9 +115,9 @@ void Scene3D::Init(HWND* wnd, Input* in)
 	Dlist = glGenLists(1);
 	glClearStencil(0);
 
-	cam.positions(0 ,0 ,6, 0 ,0 , 0, 0, 1, 0);
+	cam.positions(0 ,0 ,4, 0 ,0 , 0, 0, 1, 0);
 	//Also, do any other setting variables here for your app if you wish.
-
+	
 	glEnable(GL_LIGHTING);
 	scenery.initScenery();
 	scenery.Textures();
@@ -305,8 +305,10 @@ void Scene3D::Resize()
 //////////////////////////////INPUT/////////////////////////////
 void Scene3D::HandleInput(float dt)
 {
-	int currMouseX = input->getMouseX();
+	
+		int currMouseX = input->getMouseX();
 		int distanceX = currMouseX - differenceX;
+	
 	
 		if(input->isKeyDown(0x58))  // if x is pressed
 		{
@@ -397,7 +399,7 @@ void Scene3D::HandleInput(float dt)
 			cam_state = second;
 			input->SetKeyUp(0x57);  //force un-pressing of w
 		}
-
+		
 		if( input->isKeyDown(VK_SPACE))		//PRESS SPACE TO MOVE CAMERA BY MOUSE
 		{
 			int currMouseX = input->getMouseX();
@@ -411,8 +413,11 @@ void Scene3D::HandleInput(float dt)
 		{
 			cam.SetYPR(cam.YPR.getX() + distanceX, cam.YPR.getY(), cam.YPR.getZ());
 		}
-	
-		differenceX = currMouseX;
+			
+			differenceX = currMouseX;
+				
+			
+		
 	}
 	
 	
