@@ -1,0 +1,12 @@
+Please put all the files from the “Images” folder into your  Documents\maya\<maya version>\prefs\icons folder
+
+In the “Rig” folder, the file named “1301186 - Rig - AG0932A – Technical Art Applications” is the final rig.
+ The “heartless” file is an extra incomplete rig created to show how an enemy may be created.It has been placed in a folder to keep it out of the way.
+
+The script was created with help from the Maya Python command help website. The commands can be found here:
+http://download.autodesk.com/us/maya/2011help/CommandsPython/
+
+The input fields were based on this tutorial:
+http://www.digitaltutors.com/lesson/3512-Creating-input-fields
+
+
